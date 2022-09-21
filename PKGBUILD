@@ -16,7 +16,7 @@ package() {
     install -d "$pkgdir/usr/bin/$pkgname-resources/"
     install -d "$pkgdir/usr/bin/$pkgname-resources/kidding"
     install -Dm777 "$pkgname" "$pkgdir/usr/bin/$pkgname"
-    cp -f ./kidding/* "$pkgdir/usr/bin/$pkgname-resources/kidding"
+    cp -rf ./kidding/* "$pkgdir/usr/bin/$pkgname-resources/kidding"
     cp -f *.rasi "$pkgdir/usr/bin/$pkgname-resources/"
     cp -f *.png "$pkgdir/usr/bin/$pkgname-resources/"
     cp -f *.jpeg "$pkgdir/usr/bin/$pkgname-resources/"
