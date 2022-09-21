@@ -3,4 +3,5 @@
 themenum=7
 theme="$(expr $(( $RANDOM % $themenum )) + 1 )"
 echo $theme
+cd /usr/bin/ramallahos-rofi-powermenu-resources/
 bash powermenu${theme}.sh
