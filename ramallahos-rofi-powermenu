@@ -1,0 +1,6 @@
+#!/usr/bin/env bash
+
+themenum=7
+theme="$(expr $(( $RANDOM % $themenum )) + 1 )"
+echo $theme
+bash powermenu${theme}.sh
